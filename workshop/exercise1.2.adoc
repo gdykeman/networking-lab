@@ -169,7 +169,7 @@ OK, go ahead and run your playbook as specified in *Step 1*
 
 In standard output, you should see something that looks very similar to the following:
 
-image::stdout_1.png[caption="Figure 1: ", title="apache_basic playbook stdout"]
+image::stdout_1.png[caption="Figure 1: ", title="backup playbook stdout"]
 
-Notice that the play and each task is named so that you can see what is being done and to which node it is being done to.
+Notice that the play and each task is named so that you can see what is being done and to which router it is being done to.
 image::backup.png[caption="Figure 1: ", title="Completed Playbook - w/Spacing", link="{image_links}/backup.png"]
