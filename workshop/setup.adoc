@@ -9,9 +9,9 @@ Today's workshop infrastructure is being run in Amazon EC2. +
 Each student will be assigned a number, e.g. student1, student2, student3  +
 Your instructor will supply you with a web site url or IP address where you will find detailed info for +
 your own personal lab environment. +
-- *EC2 username* +
-- *EC2 password* +
-- *IP Addresses for each of your EC2 instances* +
+- *username: ec2-user* +
+- *ssh-key to use* +
+- *hostnames of your instances* +
 
 ****
 
@@ -21,7 +21,8 @@ Workshop Infrastructure
 Each student's personal EC2 lab is equipped with the following:
 ****
 * (1) Control node (to run ansible plays and install Ansible Tower).
-* (2) Endpoint nodes (to execute ansible playbooks upon).
+* (2) Router nodes (to execute ansible playbooks upon).
+* (1) Host node (to test connectivity)
 
 .Setup Your Environment
 ****
@@ -36,8 +37,8 @@ Testing your environment
 ====
 * Open a terminal or terminal emulator (like PuTTy)
 * ssh to each one of your EC2 nodes/instances using ssh.
-* ssh <account name>@<IP address of node>
-- EXAMPLE: ```ssh bhirsch@52.62.1.8```
+* ssh ec2-user@<student#-control.net-ws.redhatgov.io
+- EXAMPLE: ```ssh ec2-user@student1-control.net-ws.redhatgov.io```
 ====
 
 [IMPORTANT]
@@ -47,4 +48,4 @@ Be sure you can log in to your ec2 instances.  If you can't log in start shoutin
 [.lead]
 End Result
 
-At this point, everyone should have logged into each of your 3 nodes.  If you haven't, let us know so we can get you fixed up.
+At this point, everyone should have logged into their Ansible control node.  If you haven't, let us know so we can get you fixed up.

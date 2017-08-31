@@ -1,4 +1,4 @@
-= Exercise 1.5 - Running the apache-basic-playbook
+= Exercise 1.5 - Configuring a static route
 
 ---
 

@@ -7,7 +7,7 @@
 :image_links: https://s3.amazonaws.com/ansible-workshop.redhatgov.io/_images
 
 
-= Exercise 1.2 - Writing Your First playbook
+= Exercise 1.2 - Backing up Configurations
 
 ---
 
@@ -172,4 +172,3 @@ In standard output, you should see something that looks very similar to the foll
 image::stdout_1.png[caption="Figure 1: ", title="backup playbook stdout"]
 
 Notice that the play and each task is named so that you can see what is being done and to which router it is being done to.
-image::backup.png[caption="Figure 1: ", title="Completed Playbook - w/Spacing", link="{image_links}/backup.png"]

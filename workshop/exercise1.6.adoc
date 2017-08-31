@@ -3,7 +3,7 @@
 :dir_url: http://docs.ansible.com/ansible/playbooks_best_practices.html
 
 
-= Exercise 1.6 - Roles: Making your playbooks reusable
+= Exercise 1.6 - Testing Connectivity
 
 ---
 
