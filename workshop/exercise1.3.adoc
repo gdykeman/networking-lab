@@ -7,7 +7,7 @@
 ---
 
 ****
-Let's work on our next playbook, creating a GRE Tunnel between rtr1 & rtr2
+*Let's work on our next playbook, creating a GRE Tunnel between rtr1 & rtr2*
 ====
 *Step 1:* Make sure you're in the networking-workshop directory +
 ----
@@ -75,6 +75,16 @@ Note that the "hosts:" is targeting *rtr2*
          - tunnel destination <IP of Router 1>
       parents: interface Tunnel 0
 ====
+
+Now that you've completed writing your playbook, let's go ahead and save it.
+
+Use the ```write/quit``` method in ```vim``` to save your playbook, i.e. ```hit Esc then :wq!```
+
+We now have our second playbook.  Let's go ahead and run that awesomeness!
+
+[NOTE]
+image::greformat.png[caption="Figure 1: ", title="Completed Playbook - w/Spacing", link="{image_links}/greformat.png"]
+
 ====
 *Step 7:* Running the playbook +
 From your networking-workshop directory, run the gre.yml playbook
@@ -82,7 +92,7 @@ From your networking-workshop directory, run the gre.yml playbook
 ansible-playbook gre.yml
 ----
 ====
-
+image::stdout_2.png[caption="Figure 1: ", title="GRE Playbook stdout", link="{image_links}/stdout_2.png"]
 ---
 [NOTE]
 ====

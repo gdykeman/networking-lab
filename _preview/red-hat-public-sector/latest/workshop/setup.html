@@ -228,9 +228,9 @@ Today&#8217;s workshop infrastructure is being run in Amazon EC2.<br>
 Each student will be assigned a number, e.g. student1, student2, student3 <br>
 Your instructor will supply you with a web site url or IP address where you will find detailed info for<br>
 your own personal lab environment.<br>
-- <strong>EC2 username</strong><br>
-- <strong>EC2 password</strong><br>
-- <strong>IP Addresses for each of your EC2 instances</strong><br>
+- <strong>username: ec2-user</strong><br>
+- <strong>ssh-key to use</strong><br>
+- <strong>hostnames of your instances</strong><br>
 </td>
 </tr>
 </table>
@@ -251,7 +251,10 @@ your own personal lab environment.<br>
 <p>(1) Control node (to run ansible plays and install Ansible Tower).</p>
 </li>
 <li>
-<p>(2) Endpoint nodes (to execute ansible playbooks upon).</p>
+<p>(2) Router nodes (to execute ansible playbooks upon).</p>
+</li>
+<li>
+<p>(1) Host node (to test connectivity)</p>
 </li>
 </ul>
 </div>
@@ -281,11 +284,11 @@ Namely&#8230;&#8203; ssh access to your EC2 nodes.</p>
 <p>ssh to each one of your EC2 nodes/instances using ssh.</p>
 </li>
 <li>
-<p>ssh &lt;account name&gt;@&lt;IP address of node&gt;</p>
+<p>ssh ec2-user@&lt;student#-control.net-ws.redhatgov.io</p>
 <div class="ulist">
 <ul>
 <li>
-<p>EXAMPLE: <code><code>ssh bhirsch@52.62.1.8</code></code></p>
+<p>EXAMPLE: <code><code>ssh <a href="mailto:ec2-user@student1-control.net-ws.redhatgov.io">ec2-user@student1-control.net-ws.redhatgov.io</a></code></code></p>
 </li>
 </ul>
 </div>
@@ -312,7 +315,7 @@ Be sure you can log in to your ec2 instances.  If you can&#8217;t log in start s
 <p>End Result</p>
 </div>
 <div class="paragraph">
-<p>At this point, everyone should have logged into each of your 3 nodes.  If you haven&#8217;t, let us know so we can get you fixed up.</p>
+<p>At this point, everyone should have logged into their Ansible control node.  If you haven&#8217;t, let us know so we can get you fixed up.</p>
 </div>
       </div>
     </div>

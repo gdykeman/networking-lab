@@ -232,19 +232,19 @@
 <p>Exercise 1.1 - Ad-Hoc Commands</p>
 </li>
 <li>
-<p>Exercise 1.2 - Writing Your First Playbook</p>
+<p>Exercise 1.2 - Backing up Configurations</p>
 </li>
 <li>
-<p>Exercise 1.3 - Running Your First Playbook</p>
+<p>Exercise 1.3 - Creating a GRE Tunnel</p>
 </li>
 <li>
-<p>Exercise 1.4 - Using Variables, loops, and handlers</p>
+<p>Exercise 1.4 - Configuring interfaces</p>
 </li>
 <li>
-<p>Exercise 1.5 - Running the apache-basic-playbook</p>
+<p>Exercise 1.5 - Configuring a static route</p>
 </li>
 <li>
-<p>Exercise 1.6 - Roles: Making your playbooks reusable</p>
+<p>Exercise 1.6 - Testing connectivity</p>
 </li>
 <li>
 <p>Exercise 2.1 - Installing Ansible Tower</p>
@@ -311,7 +311,7 @@ combination of presentation, demonstration, and hands-on labs.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="bash">ansible web -m setup</code></pre>
+<pre class="CodeRay highlight"><code data-lang="bash">ansible control -m setup</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -324,9 +324,9 @@ combination of presentation, demonstration, and hands-on labs.</p>
   name: This is a play within a playbook
   become: yes
   vars:
-    httpd_packages:
-      - httpd
-      - mod_wsgi</code></pre>
+    ntp_servers:
+      - 8.8.8.8
+      - 8.8.4.4</code></pre>
 </div>
 </div>
 <div class="admonitionblock important">
