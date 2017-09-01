@@ -176,3 +176,15 @@ In standard output, you should see something that looks very similar to the foll
 image::stdout_1.png[caption="Figure 1: ", title="backup playbook stdout"]
 
 Notice that the play and each task is named so that you can see what is being done and to which router it is being done to.
+
+====
+You can view the backup files that were created by listing the backup directory.
+----
+ll backup
+----
+You can also view the contents of the backed up configuration files. +
+Replace the x after student with your student number and choose 1 or 2 for the router's config you want to view.
+----
+less backup/student(x)-rtr(1 or 2).net-ws.redhatgov.io
+
+====
