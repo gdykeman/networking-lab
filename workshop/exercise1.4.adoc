@@ -66,14 +66,14 @@ image::routing1.png[caption="Figure 1: ", title="Step 2 - w/Spacing", link="{ima
 ---
 
 
-*Step 3:* Add the first task to capture the ios_facts.
+*Step 3:* Add the first task to capture the ios_facts.  Make sure the *t* in tasks lines up with the *v* in vars.
 
 ---
 image::routing2.png[caption="Figure 2: ", title="Step 3 - w/Spacing", link="{image_links}/routing2.png"]
 ---
 
-*Step 4:* Create a block and add the tasks for rtr1 with conditionals.  We'll also add a comment to help us better understand the playbook at a later time. +
-The *b* in block should aling with *n* in name of the previous task where we used ios_facts.
+*Step 4:* Create a block and add the tasks for rtr1 with conditionals.  We'll also add a comment for better documentation. +
+The *b* in block should align with *n* in name of the previous task where we used ios_facts.
 
 ---
 image::routing3.png[caption="Figure 3: ", title="Step 4 - w/Spacing", link="{image_links}/routing3.png"]
@@ -110,7 +110,7 @@ image::routing4.png[caption="Figure 4: ", title="Step 5 - w/Spacing", link="{ima
 
 [NOTE]
 ====
-*So... what did I just write?*
+*So... what's going on?*
 
 - `net_interface:` This module allows us to define the state of the interface (up, admin down, etc.) in an agnostic way.
 In this case, we are making sure that GigabitEthernet2 is up and has the correct description.
