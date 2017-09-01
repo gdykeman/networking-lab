@@ -1,4 +1,4 @@
-= Exercise 1.5 - Configuring a static route
+= Exercise 1.5 - Executing your playbook and review
 
 ---
 
