@@ -285,7 +285,7 @@ vim router_configs.yml</pre>
 </div>
 <hr>
 <div class="paragraph">
-<p><strong>Step 3:</strong> Add the first task to capture the ios_facts.</p>
+<p><strong>Step 3:</strong> Add the first task to capture the ios_facts.  Make sure the <strong>t</strong> in tasks lines up with the <strong>v</strong> in vars.</p>
 </div>
 <hr>
 <div class="imageblock">
@@ -296,8 +296,8 @@ vim router_configs.yml</pre>
 </div>
 <hr>
 <div class="paragraph">
-<p><strong>Step 4:</strong> Create a block and add the tasks for rtr1 with conditionals.  We&#8217;ll also add a comment to help us better understand the playbook at a later time.<br>
-The <strong>b</strong> in block should aling with <strong>n</strong> in name of the previous task where we used ios_facts.</p>
+<p><strong>Step 4:</strong> Create a block and add the tasks for rtr1 with conditionals.  We&#8217;ll also add a comment for better documentation.<br>
+The <strong>b</strong> in block should align with <strong>n</strong> in name of the previous task where we used ios_facts.</p>
 </div>
 <hr>
 <div class="imageblock">
@@ -376,7 +376,7 @@ Second condition - the hostname must contain 'rtr1' so we know we&#8217;re targe
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>So&#8230;&#8203; what did I just write?</strong></p>
+<p><strong>So&#8230;&#8203; what&#8217;s going on?</strong></p>
 </div>
 <div class="ulist">
 <ul>
